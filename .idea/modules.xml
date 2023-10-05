@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/00-cheat-sheet-OmarAL-Desoky.iml" filepath="$PROJECT_DIR$/.idea/00-cheat-sheet-OmarAL-Desoky.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../.idea/WMC.iml" filepath="$PROJECT_DIR$/../.idea/WMC.iml" />
     </modules>
   </component>
 </project>
