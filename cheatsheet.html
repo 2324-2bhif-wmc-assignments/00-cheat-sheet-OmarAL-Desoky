@@ -6,19 +6,25 @@
         <link type="text/css" rel="stylesheet" href="style.css">
     </head>
     <body>
-        <h1>Cheatsheet</h1>
 
-        <ul>
-            <li><a class="links" href="#WorldWideWeb">World Wide Web</a></li>
-            <li><a class="links" href="#WebServer">Web Server</a></li>
-            <li><a class="links" href="#WebClient">Web Client</a></li>
-            <li><a class="links" href="#HelloWorld">Hello World</a></li>
-            <hr>
-        </ul>
+    <article>
+        <h1>
+            <a href="index.html"><img id="HomeButton" src="Home.jpg"></a>
+            General
+        </h1>
 
-        <article>
-            <h2 id="WorldWideWeb">World Wide Web</h2>
-            <section>
+            <ul class="links">
+                <li><a href="#WorldWideWeb">World Wide Web</a></li>
+                <li><a href="#WebServer">Web Server</a></li>
+                <li><a href="#WebClient">Web Client</a></li>
+                <li><a href="#HelloWorld">Hello World</a></li>
+                <hr>
+            </ul>
+
+
+            <section id="WorldWideWeb">
+                <h2>World Wide Web</h2>
+                <hr>
 
                 <p>
                     History:
@@ -51,15 +57,16 @@
                     <br>
                     Fragment: The fragment is also optional and is followed by a "#". It is often used to refer to a specific section within a page, such as: B. an anchor within a long article.
                 </p>
+
+                <hr>
             </section>
-        </article>
 
-        <article>
-            <h2 id="WebServer">Web Server</h2>
+            <section id="WebServer">
+                <h2>Web Server</h2>
+                <hr>
 
-            <section>
                 <p>
-                    A web server is computer software and underlying hardware that accepts requests over the HTTP protocol (or its secure variant, HTTPS).
+                    A web server is a computer software and underlying hardware that accepts requests over the HTTP protocol (or its secure variant, HTTPS).
                     <br>
                     A web server accepts requests from user agents such as web browsers or web crawlers and responds with either the contents of a requested resource or an error message.
                     <br>
@@ -68,28 +75,29 @@
                     Content in web pages is usually described by the HTML code, which defines the layout and structure of the web page. CSS (Cascading Style Sheets) can be used for formatting and displaying the content. The "content" mentioned in the text refers to the data displayed in web pages, be it text, images, videos or other elements presented in a human-readable form.
                     <br>
                 </p>
+
+                <hr>
             </section>
-        </article>
 
-        <article>
+            <section id="WebClient">
+                <h2>Web Client</h2>
+                <hr>
 
-            <h2 id="WebClient">Web Client</h2>
-
-            <section>
                 <p>
-                    A web client is software or a device that accesses web services or resources on the Internet. It is used to display and retrieve web pages and other information from the Internet.
+                    A web client is a software or a device that accesses web services or resources on the Internet. It is used to display and retrieve web pages and other information from the Internet.
                     <br>
                     A web client retrieves information from the Internet and displays it to the user. This can include viewing web pages, downloading files, or accessing web applications.
                     <br>
                     A web client and a web browser are not the same thing, although they can perform similar tasks. A web browser is a type of web client specifically designed for viewing web pages. However, a web client can also perform other tasks, such as retrieving data from APIs or communicating with web applications without displaying web pages.
                 </p>
+
+                <hr>
             </section>
-        </article>
 
-        <article>
-            <h2 id="HelloWorld">Hello World</h2>
+            <section id="HelloWorld">
+                <h2>Hello World</h2>
+                <hr>
 
-            <section>
                 <p>
                     The HTML head element is a container in an HTML page that contains metadata and information about the document that is not directly displayed on the web page. These can be titles, font definitions, links to external files.
                     <br>
@@ -101,6 +109,8 @@
                     <br>
                     To mark text in HTML, use mark or to mark it in a color use span.
                 </p>
+
+                <hr>
             </section>
         </article>
     </body>

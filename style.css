@@ -7,15 +7,40 @@ h1{
     justify-content: center;
     align-items: center;
 
-    font-family: Bodoni, MT, Poster, Compressed, sans-serif;
+    font-family: Arial, Narrow, sans-serif;
     font-size: 30px;
 
     background-color: aquamarine;
+    position: relative;
 }
 
-.cheatsheetButton {
+#HomeButton{
+    text-align: left;
+
+    height: 35px;
+    width: 35px;
+
+    position: absolute;
+    left: 3%;
+    top: 30%;
+}
+
+.generalBox{
+    width: 200px;
+    padding: 30px;
+    border: aquamarine;
+    background-color: yellowgreen;
+    box-shadow: 15px 13px 16px grey;
+    float: left;
+}
+
+#index section :hover{
+    background-color: olive;
+}
+
+.Button {
     text-decoration: none;
-    padding: 10px;
+    padding: 20px;
     border: 1px aquamarine;
 
     background-color: black;
@@ -27,31 +52,66 @@ h1{
     font-family: Arial, Narrow, sans-serif;
 }
 
-.cheatsheetButton:hover{
+#index .Button:hover{
     border: black;
     background-color: darkgrey;
     color: black;
 }
 
-.cheatsheetBox{
+.htmlBox{
     width: 200px;
     padding: 30px;
     border: aquamarine;
     background-color: yellowgreen;
     box-shadow: 15px 13px 16px grey;
+
+    float: left;
+    clear: none;
+
+    margin-left: 25px;
+    margin-top: 48px;
 }
 
-.cheatsheetBox:hover{
-    background-color: olive;
+.cssBox{
+    width: 200px;
+    padding: 30px;
+    border: aquamarine;
+    background-color: yellowgreen;
+    box-shadow: 15px 13px 16px grey;
+
+    float: left;
+    clear: none;
+
+    margin-left: 25px;
+    margin-top: 48px;
 }
 
-.links{
-    font-size: 18px;
+.links li a{
+    font-size: 20px;
     text-decoration: none;
     color: black;
+
+    font-family: Arial, Nova, Cond, Light, sans-serif;
 }
 
-.links:hover{
+.links li a:hover{
     color: darkgrey;
 }
 
+p{
+    font-family: Calibri, Light, sans-serif;
+    font-size: 20px;
+}
+
+h2{
+    font-family: Bodoni, MT, Poster, Compressed, sans-serif;
+    font-size: 30px;
+    margin-top: 50px;
+
+    background-color: yellowgreen;
+    padding: 20px;
+}
+
+h2:hover{
+    background-color: olive;
+}
