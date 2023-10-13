@@ -1,3 +1,10 @@
+#indexBackground {
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
 h1{
     height: 100px;
     box-shadow: 17px 15px 18px grey;
@@ -9,14 +16,13 @@ h1{
 
     font-family: Arial, Narrow, sans-serif;
     font-size: 30px;
+    position: sticky;
+    top: 0;
 
-    background-color: aquamarine;
-    position: relative;
+    background: linear-gradient(90deg, rgba(246,246,246,1) 0%, rgba(20,160,156,1) 52%, rgba(16,149,177,1) 68%);
 }
 
 #HomeButton{
-    text-align: left;
-
     height: 35px;
     width: 35px;
 
@@ -25,63 +31,348 @@ h1{
     top: 30%;
 }
 
-.generalBox{
+#boxes {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#boxes .box {
+    margin-top: 30px;
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(139,84,193,1) 0%, rgba(196,189,85,1) 0%, rgba(119,85,199,1) 0%, rgba(174,159,118,1) 0%, rgba(93,89,224,1) 100%, rgba(252,70,107,1) 100%);
+    box-shadow: 16px 16px 16px grey;
+    height: 300px;
     width: 200px;
-    padding: 30px;
-    border: aquamarine;
-    background-color: yellowgreen;
-    box-shadow: 15px 13px 16px grey;
-    float: left;
 }
 
-#index section :hover{
-    background-color: olive;
+#boxes .box :hover{
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(139,84,193,1) 0%, rgba(119,85,199,1) 36%, rgba(196,189,85,1) 43%, rgba(93,89,224,1) 100%, rgba(252,70,107,1) 100%);    padding: 20px;
+    box-shadow: 16px 16px 16px grey;
 }
 
-.Button {
+#boxes .box a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     text-decoration: none;
-    padding: 20px;
-    border: 1px aquamarine;
-
-    background-color: black;
-    color: white;
-
-    margin-left: 35px;
-
-    font-size: 20px;
-    font-family: Arial, Narrow, sans-serif;
-}
-
-#index .Button:hover{
-    border: black;
-    background-color: darkgrey;
     color: black;
+
+    font-family: Calibri, Light, sans-serif;
+    font-size: 30px;
+
+    height: 100%;
+    width: 100%;
 }
 
-.htmlBox{
-    width: 200px;
-    padding: 30px;
-    border: aquamarine;
-    background-color: yellowgreen;
-    box-shadow: 15px 13px 16px grey;
-
-    float: left;
-    clear: none;
-
-    margin-left: 25px;
+#boxes .box a:hover{
 }
 
-.cssBox{
+.bubble {
+    position: absolute;
     width: 200px;
-    padding: 30px;
-    border: aquamarine;
-    background-color: yellowgreen;
-    box-shadow: 15px 13px 16px grey;
+    height: 200px;
+    border-radius:  50%;
+    box-shadow: inset 0 0 25px rgba(255, 255, 255, 0.25);
+    animation: animate 6s ease-in-out infinite;
+    bottom: -10px;
+    margin-left: 10px;
+}
 
-    float: left;
-    clear: none;
 
-    margin-left: 25px;
+@keyframes animate {
+    0% {
+        transform: translateY(200%);
+    }
+    100% {
+        transform: translateY(-200%);
+    }
+}
+
+.bubble::before{
+    content: '';
+    position: absolute;
+    top: 50px;
+    left: 45px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: white;
+    z-index: 10;
+    filter: blur(2px);
+}
+
+.bubble::after{
+    content: '';
+    position: absolute;
+    top: 80px;
+    left: 80px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+    z-index: 10;
+    filter: blur(2px);
+}
+
+.bubble span {
+    position: absolute;
+    border-radius: 50%;
+}
+
+.bubble span:nth-child(1) {
+    inset: 10px;
+    border-left: 15px solid aqua;
+    filter: blur(8px);
+}
+
+.bubble span:nth-child(2) {
+    inset: 10px;
+    border-right: 15px solid hotpink;
+    filter: blur(8px);
+}
+
+.bubble span:nth-child(3) {
+    inset: 20px;
+    border-top: 15px solid yellow;
+    filter: blur(8px);
+}
+
+.bubble span:nth-child(4) {
+    inset: 10px;
+    border-bottom: 10px solid white;
+    filter: blur(8px);
+    transform: rotate(330deg);
+}
+
+.bubble2 {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius:  50%;
+    box-shadow: inset 0 0 25px rgba(255, 255, 255, 0.25);
+    animation: animate 7s ease-in-out infinite;
+    bottom: -10px;
+    margin-left: 550px;
+}
+
+
+@keyframes animate {
+    0%{
+        transform: translateY(200%);
+    }
+    100%{
+        transform: translateY(-200%);
+    }
+}
+
+.bubble2::before{
+    content: '';
+    position: absolute;
+    top: 50px;
+    left: 45px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: white;
+    z-index: 10;
+    filter: blur(2px);
+}
+
+.bubble2::after{
+    content: '';
+    position: absolute;
+    top: 80px;
+    left: 80px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+    z-index: 10;
+    filter: blur(2px);
+}
+
+.bubble2 span {
+    position: absolute;
+    border-radius: 50%;
+}
+
+.bubble2 span:nth-child(1) {
+    inset: 10px;
+    border-left: 15px solid white;
+    filter: blur(8px);
+}
+
+.bubble2 span:nth-child(2) {
+    inset: 10px;
+    border-right: 15px solid indigo;
+    filter: blur(8px);
+}
+
+.bubble2 span:nth-child(3) {
+    inset: 20px;
+    border-top: 15px solid cornflowerblue;
+    filter: blur(8px);
+}
+
+.bubble2 span:nth-child(4) {
+    inset: 10px;
+    border-bottom: 10px solid yellowgreen;
+    filter: blur(8px);
+    transform: rotate(330deg);
+}
+
+.bubble3 {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius:  50%;
+    box-shadow: inset 0 0 25px rgba(255, 255, 255, 0.25);
+    animation: animate 8s ease-in-out infinite;
+    bottom: -10px;
+    margin-left: 1040px;
+}
+
+
+@keyframes animate {
+    0%{
+        transform: translateY(200%);
+    }
+    100%{
+        transform: translateY(-200%);
+    }
+}
+
+.bubble3::before{
+    content: '';
+    position: absolute;
+    top: 50px;
+    left: 45px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: white;
+    z-index: 10;
+    filter: blur(2px);
+}
+
+.bubble3::after{
+    content: '';
+    position: absolute;
+    top: 80px;
+    left: 80px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+    z-index: 10;
+    filter: blur(2px);
+}
+
+.bubble3 span {
+    position: absolute;
+    border-radius: 50%;
+}
+
+.bubble3 span:nth-child(1) {
+    inset: 10px;
+    border-left: 15px solid hotpink;
+    filter: blur(8px);
+}
+
+.bubble3 span:nth-child(2) {
+    inset: 10px;
+    border-right: 15px solid grey;
+    filter: blur(8px);
+}
+
+.bubble3 span:nth-child(3) {
+    inset: 20px;
+    border-top: 15px solid green;
+    filter: blur(8px);
+}
+
+.bubble3 span:nth-child(4) {
+    inset: 10px;
+    border-bottom: 10px solid white;
+    filter: blur(8px);
+    transform: rotate(330deg);
+}
+
+.bubble4 {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius:  50%;
+    box-shadow: inset 0 0 25px rgba(255, 255, 255, 0.25);
+    animation: animate 9s ease-in-out infinite;
+    bottom: -10px;
+    margin-left: 1515px;
+}
+
+
+@keyframes animate {
+    0%{
+        transform: translateY(200%);
+    }
+    100%{
+        transform: translateY(-200%);
+    }
+}
+
+.bubble4::before{
+    content: '';
+    position: absolute;
+    top: 50px;
+    left: 45px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: white;
+    z-index: 10;
+    filter: blur(2px);
+}
+
+.bubble4::after{
+    content: '';
+    position: absolute;
+    top: 80px;
+    left: 80px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+    z-index: 10;
+    filter: blur(2px);
+}
+
+.bubble4 span {
+    position: absolute;
+    border-radius: 50%;
+}
+
+.bubble4 span:nth-child(1) {
+    inset: 10px;
+    border-left: 15px solid coral;
+    filter: blur(8px);
+}
+
+.bubble4 span:nth-child(2) {
+    inset: 10px;
+    border-right: 15px solid red;
+    filter: blur(8px);
+}
+
+.bubble4 span:nth-child(3) {
+    inset: 20px;
+    border-top: 15px solid white;
+    filter: blur(8px);
+}
+
+.bubble4 span:nth-child(4) {
+    inset: 10px;
+    border-bottom: 10px solid burlywood;
+    filter: blur(8px);
+    transform: rotate(330deg);
 }
 
 .links li a{
