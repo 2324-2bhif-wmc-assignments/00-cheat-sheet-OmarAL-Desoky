@@ -465,3 +465,9 @@ h3:hover{
 #positionOutside {
     list-style-position: outside;
 }
+
+#tablesHTML p, table, ul {
+    margin-left: 50px;
+    font-family: Calibri, Light, sans-serif;
+    font-size: 20px;
+}
