@@ -406,3 +406,23 @@ ol li{
     font-size: 20px;
     font-family: Calibri, Light, sans-serif;
 }
+
+h3 {
+    font-family: Bodoni, MT, Poster, Compressed, sans-serif;
+    font-size: 25px;
+    margin-top: 50px;
+    margin-left: 50px;
+
+    display: flex;
+    background-color: aqua;
+    padding: 20px;
+}
+
+h3:hover{
+    color: white;
+    background-color: blue;
+}
+
+.underlineH3 {
+    margin-left: 50px;
+}
