@@ -36,7 +36,7 @@ h1{
     justify-content: space-evenly;
 }
 
-#boxes .box {
+#boxes div {
     margin-top: 30px;
     background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(139,84,193,1) 0%, rgba(196,189,85,1) 0%, rgba(119,85,199,1) 0%, rgba(174,159,118,1) 0%, rgba(93,89,224,1) 100%, rgba(252,70,107,1) 100%);
     box-shadow: 16px 16px 16px grey;
@@ -44,12 +44,12 @@ h1{
     width: 200px;
 }
 
-#boxes .box :hover{
+#boxes div :hover{
     background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(139,84,193,1) 0%, rgba(119,85,199,1) 36%, rgba(196,189,85,1) 43%, rgba(93,89,224,1) 100%, rgba(252,70,107,1) 100%);    padding: 20px;
     box-shadow: 16px 16px 16px grey;
 }
 
-#boxes .box a{
+#boxes div a{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -62,9 +62,6 @@ h1{
 
     height: 100%;
     width: 100%;
-}
-
-#boxes .box a:hover{
 }
 
 .bubble {
