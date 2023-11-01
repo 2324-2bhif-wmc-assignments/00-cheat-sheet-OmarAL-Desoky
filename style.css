@@ -439,3 +439,29 @@ h3:hover{
     font-family: Calibri, Light, sans-serif;
     font-size: 20px;
 }
+
+#listsCSS p, ul{
+    margin-left: 50px;
+    font-family: Calibri, Light, sans-serif;
+    font-size: 20px;
+}
+
+#square {
+    list-style-type: square;
+}
+
+#image {
+    list-style-image: url("myBullet.png");
+}
+
+#romanNumber {
+    list-style-type: upper-roman;
+}
+
+#positionInside {
+    list-style-position: inside;
+}
+
+#positionOutside {
+    list-style-position: outside;
+}
