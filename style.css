@@ -75,7 +75,6 @@ h1{
     margin-left: 10px;
 }
 
-
 @keyframes animate {
     0% {
         transform: translateY(200%);
@@ -373,11 +372,12 @@ h1{
 }
 
 .links li a{
-    font-size: 20px;
+    font-size: 25px;
+    font-family: Arial, Nova, Cond, Light, sans-serif;
+
     text-decoration: none;
     color: black;
 
-    font-family: Arial, Nova, Cond, Light, sans-serif;
 }
 
 .links li a:hover{
@@ -402,11 +402,6 @@ h2:hover{
     background-color: olive;
 }
 
-ol li{
-    font-size: 20px;
-    font-family: Calibri, Light, sans-serif;
-}
-
 h3 {
     font-family: Bodoni, MT, Poster, Compressed, sans-serif;
     font-size: 25px;
@@ -423,15 +418,10 @@ h3:hover{
     background-color: blue;
 }
 
-.underlineH3 {
+#basicHtml p, ol{
     margin-left: 50px;
-}
-
-#listsAndTables > p{
-    font-size: 30px;
     font-family: Calibri, Light, sans-serif;
-
-    background-color: aliceblue;
+    font-size: 20px;
 }
 
 #listsHTML p, ul{
@@ -440,7 +430,31 @@ h3:hover{
     font-size: 20px;
 }
 
+#tablesHTML p, ul{
+    margin-left: 50px;
+    font-family: Calibri, Light, sans-serif;
+    font-size: 20px;
+}
+
+#table {
+    margin-left: 50px;
+    font-family: Calibri, Light, sans-serif;
+    font-size: 20px;
+}
+
+#basicCSS p{
+    margin-left: 50px;
+    font-family: Calibri, Light, sans-serif;
+    font-size: 20px;
+}
+
 #listsCSS p, ul{
+    margin-left: 50px;
+    font-family: Calibri, Light, sans-serif;
+    font-size: 20px;
+}
+
+#tablesCSS p, ul{
     margin-left: 50px;
     font-family: Calibri, Light, sans-serif;
     font-size: 20px;
@@ -464,16 +478,4 @@ h3:hover{
 
 #positionOutside {
     list-style-position: outside;
-}
-
-#tablesHTML p, table, ul {
-    margin-left: 50px;
-    font-family: Calibri, Light, sans-serif;
-    font-size: 20px;
-}
-
-#tablesCSS p, ul{
-    margin-left: 50px;
-    font-family: Calibri, Light, sans-serif;
-    font-size: 20px;
 }

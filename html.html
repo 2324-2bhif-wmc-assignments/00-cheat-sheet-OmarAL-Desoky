@@ -6,16 +6,23 @@
         <link type="text/css" rel="stylesheet" href="style.css">
     </head>
     <body>
-        <article>
 
-            <h1>
-                <a href="index.html"><img id="HomeButton" src="Home.jpg" alt="HomeButton"></a>
-                Basic HTML
-            </h1>
+        <h1>
+            <a href="index.html"><img id="HomeButton" src="Home.jpg" alt="HomeButton"></a>
+            HTML
+        </h1>
+
+        <ul class="links">
+            <li><a href="#basicHtml">Basic</a></li>
+            <li><a href="#listsHTML">Lists</a></li>
+            <li><a href="#tablesHTML">Tables</a></li>
+        </ul>
+        <hr>
+
+        <article id="basicHtml">
+            <h2>Basic</h2>
 
             <section>
-
-                <h2>HTML</h2>
                 <hr>
                     <p>
                         The components of html elements are:
@@ -38,8 +45,77 @@
                         Attributes provide additional information about elements and are always specified in the start tag!
                         They consist of a name and a value, separated by an equals sign (=)!
                     </p>
-                <hr>
             </section>
         </article>
+
+        <article id="listsAndTables">
+            <h2>Lists</h2>
+            <hr>
+
+            <section id="listsHTML">
+
+                <p>Tags: </p>
+
+                <ul>
+                    <li>ordered list (&lt;ol&gt; &lt;/ol&gt;)</li>
+                    <li>unordered list (&lt;ul&gt; &lt;/ul&gt;)</li>
+                    <li>list item (&lt;li&gt; &lt;/li&gt;)</li>
+                    <li>description list (&lt;dl&gt; &lt;/dl&gt;)</li>
+                    <li>description term (&lt;dt&gt; &lt;/dt&gt;)</li>
+                    <li>description data (&lt;dd&gt; &lt;/dd&gt;)</li>
+                </ul>
+
+            </section>
+
+            <h2>Tables</h2>
+            <hr>
+
+            <section id="tablesHTML">
+                <p>Tags: </p>
+
+                <ul>
+                    <li>create table with (&lt;table&gt;&lt;/table&gt;)</li>
+                    <li>the header (&lt;thead&gt;&lt;/thead&gt;)</li>
+                    <li>table row (&lt;tr&gt;&lt;/tr&gt;)</li>
+                    <li>table header cell (&lt;th&gt;&lt;/th&gt;)</li>
+                    <li>table body (&lt;tbody&gt;&lt;/tbody&gt;)</li>
+                    <li>table cell (&lt;td&gt;&lt;/td&gt;)</li>
+                    <li>table footer (&lt;tfoot&gt;&lt;/tfoot&gt;)</li>
+                </ul>
+
+                <table id="table">
+                    <!-- Tabellenkopf -->
+                    <thead>
+                    <tr>
+                        <th>Header 1</th>
+                        <th>Header 2</th>
+                        <th>Header 3</th>
+                    </tr>
+                    </thead>
+                    <!-- Tabellenkörper -->
+                    <tbody>
+                    <tr>
+                        <td>Data 1</td>
+                        <td>Data 2</td>
+                        <td>Data 3</td>
+                    </tr>
+                    <tr>
+                        <td>Data 4</td>
+                        <td>Data 5</td>
+                        <td>Data 6</td>
+                    </tr>
+                    </tbody>
+                    <!-- Tabellenfuß -->
+                    <tfoot>
+                    <tr>
+                        <td>Footer 1</td>
+                        <td>Footer 2</td>
+                        <td>Footer 3</td>
+                    </tr>
+                    </tfoot>
+                </table>
+            </section>
+        </article>
+
     </body>
 </html>
