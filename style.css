@@ -483,3 +483,9 @@ h3:hover{
 .underlineH3 {
     margin-left: 50px;
 }
+
+#classesHTML p{
+    margin-left: 50px;
+    font-family: Calibri, Light, sans-serif;
+    font-size: 20px;
+}
