@@ -5,7 +5,7 @@
         <title>HTML Basics</title>
         <link type="text/css" rel="stylesheet" href="style.css">
     </head>
-    <body>
+    <body id="HTML">
 
         <h1>
             <a href="index.html"><img id="HomeButton" src="Home.jpg" alt="HomeButton"></a>
@@ -18,7 +18,8 @@
             <li><a href="#tablesHTML">Tables</a></li>
             <li><a href="#classesHTML">Classes</a></li>
             <li><a href="#idsHTML">IDs</a></li>
-            <li><a href="#boxModel">Box Model</a></li>
+            <li><a href="#boxModelHTML">Box Model</a></li>
+            <li><a href="#blockElement">Block Element</a></li>
         </ul>
 
         <article id="basicHtml">
@@ -164,7 +165,7 @@
             <h2>Box Model</h2>
             <hr>
 
-            <section id="generalBoxModelHTML">
+            <section>
                 <h3>General</h3>
                 <hr class="underlineH3">
 
@@ -179,7 +180,7 @@
                             Content - The content of the box, where text and images appear!
                         </li>
                         <li>
-                            Padding - Padding is the space between the content of the element and its border. Clears an area around the content. The padding is transparent
+                            Padding - Padding is the space between the content of the element and its border. Clears an area around the content.
                         </li>
                         <li>
                             Border - A border that goes around the padding and content!
@@ -189,7 +190,32 @@
                         </li>
                     </ul>
 
-                    <img src="boxModel.png" alt="boxModel" id="boxModel"/>
+                    <img src="boxModel.png" alt="boxModel" id="boxModel">
+            </section>
+        </article>
+
+        <article id="displayElements">
+            <h2>Display elements</h2>
+            <hr>
+
+            <section id="blockElement">
+                <h3>Block Element</h3>
+                <hr class="underlineH3">
+
+                <p>
+                    A block-level element always starts on a new line and takes up the full width available (stretches out to the left and right as far as it can)!
+                    Can have margin and padding to keep distance from all surrounding elements!
+                    Has already a little distance between all other elements! (use an extra line above and below)
+                    <br>
+                    <br>
+                    Examples of block-level elements:
+                </p>
+
+                <ul>
+                    <li>&lt;div&gt;</li>
+                    <li>&lt;p&gt;</li>
+                    <li>&lt;h1 - h6&gt;</li>
+                </ul>
             </section>
         </article>
     </body>

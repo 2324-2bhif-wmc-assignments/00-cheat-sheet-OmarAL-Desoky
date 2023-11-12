@@ -418,48 +418,6 @@ h3:hover{
     background-color: blue;
 }
 
-#basicHtml p, ol{
-    margin-left: 50px;
-    font-family: Calibri, Light, sans-serif;
-    font-size: 20px;
-}
-
-#listsHTML p, ul{
-    margin-left: 50px;
-    font-family: Calibri, Light, sans-serif;
-    font-size: 20px;
-}
-
-#tablesHTML p, ul{
-    margin-left: 50px;
-    font-family: Calibri, Light, sans-serif;
-    font-size: 20px;
-}
-
-#table {
-    margin-left: 50px;
-    font-family: Calibri, Light, sans-serif;
-    font-size: 20px;
-}
-
-#basicCSS p{
-    margin-left: 50px;
-    font-family: Calibri, Light, sans-serif;
-    font-size: 20px;
-}
-
-#listsCSS p, ul{
-    margin-left: 50px;
-    font-family: Calibri, Light, sans-serif;
-    font-size: 20px;
-}
-
-#tablesCSS p, ul{
-    margin-left: 50px;
-    font-family: Calibri, Light, sans-serif;
-    font-size: 20px;
-}
-
 #square {
     list-style-type: square;
 }
@@ -484,25 +442,13 @@ h3:hover{
     margin-left: 50px;
 }
 
-#classesHTML p{
-    margin-left: 50px;
-    font-family: Calibri, Light, sans-serif;
-    font-size: 20px;
-}
-
-#idsHTML p{
-    margin-left: 50px;
-    font-family: Calibri, Light, sans-serif;
-    font-size: 20px;
-}
-
-#generalBoxModelHTML p {
-    margin-left: 50px;
-    font-family: Calibri, Light, sans-serif;
-    font-size: 20px;
-}
-
 #boxModel {
     margin-left: 50px;
     margin-top: 0.5em;
+}
+
+#HTML article section p, ul, ol, #table{
+    margin-left: 50px;
+    font-family: Calibri, Light, sans-serif;
+    font-size: 20px;
 }
