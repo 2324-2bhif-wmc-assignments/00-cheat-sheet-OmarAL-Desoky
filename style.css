@@ -452,3 +452,9 @@ h3:hover{
     font-family: Calibri, Light, sans-serif;
     font-size: 20px;
 }
+
+#CSS article section p, ul, ol, #table{
+    margin-left: 50px;
+    font-family: Calibri, Light, sans-serif;
+    font-size: 20px;
+}
