@@ -495,3 +495,14 @@ h3:hover{
     font-family: Calibri, Light, sans-serif;
     font-size: 20px;
 }
+
+#generalBoxModelHTML p {
+    margin-left: 50px;
+    font-family: Calibri, Light, sans-serif;
+    font-size: 20px;
+}
+
+#boxModel {
+    margin-left: 50px;
+    margin-top: 0.5em;
+}
