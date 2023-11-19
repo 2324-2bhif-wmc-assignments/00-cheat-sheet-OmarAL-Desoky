@@ -5,7 +5,7 @@
     overflow: hidden;
 }
 
-h1{
+h1, .header{
     height: 100px;
     box-shadow: 17px 15px 18px grey;
     margin-bottom: 50px;
@@ -377,7 +377,6 @@ h1{
 
     text-decoration: none;
     color: black;
-
 }
 
 .links li a:hover{
@@ -457,4 +456,39 @@ h3:hover{
     margin-left: 50px;
     font-family: Calibri, Light, sans-serif;
     font-size: 20px;
+}
+
+.nav_look {
+    height: 40px;
+    width: 40px;
+
+    position: absolute;
+    left: 90%;
+    top: 30%;
+}
+
+.links_dropdown_content {
+    display: none;
+    background-color: beige;
+    box-shadow: 1px 8px 16px 1px lightgray;
+
+    padding: 12px 16px;
+    position: absolute;
+    right: 3%;
+}
+
+.links_dropdown_content a{
+    font-size: 25px;
+    font-family: Arial, Nova, Cond, Light, sans-serif;
+
+    text-decoration: none;
+    color: black;
+}
+
+.navigation:hover .links_dropdown_content{
+    display: block;
+}
+
+.navigation:hover{
+    cursor: pointer;
 }
