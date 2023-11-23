@@ -497,16 +497,31 @@ h3:hover{
 }
 
 .links_dropdown_content div{
-    box-shadow: 16px 16px 16px grey;
-    background-color: yellowgreen;
+    box-shadow: 16px 16px 16px black;
+    background-color: mintcream;
 
     border-radius: 10px;
     margin: 1rem;
     text-align: center;
 }
 
+.links_dropdown_content div {
+    animation: dropdown 1s ease-in;
+    animation-fill-mode: forwards;
+}
+
+@keyframes dropdown {
+    0%{
+        transform: translateY(-50%);
+    }
+    100%{
+        transform: translateY(100%);
+        rotate: 360deg;
+    }
+}
+
 #indexBackground article{
-    animation: slide-in 1s ease-in;
+    animation: slide-in 2s ease-in;
 }
 
 @keyframes slide-in {
