@@ -504,3 +504,30 @@ h3:hover{
     margin: 1rem;
     text-align: center;
 }
+
+#indexBackground article{
+    animation: slide-in 1s ease-in;
+}
+
+@keyframes slide-in {
+    0%{
+        transform: translateY(100%);
+    }
+    100 %{
+        transform: translateY(0);
+    }
+}
+
+#indexBackground article div{
+    animation: divs-rotate 1s ease-in;
+    animation-fill-mode: forwards;
+}
+
+@keyframes divs-rotate {
+    0%{
+        rotate: 0;
+    }
+    100%{
+        rotate: 360deg;
+    }
+}
