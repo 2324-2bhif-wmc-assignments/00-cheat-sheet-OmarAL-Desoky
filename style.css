@@ -520,8 +520,8 @@ h3:hover{
     }
 }
 
-#indexBackground article{
-    animation: slide-in 2s ease-in;
+#indexBackground article div{
+    animation: slide-in 1.5s ease-in;
 }
 
 @keyframes slide-in {
@@ -533,16 +533,3 @@ h3:hover{
     }
 }
 
-#indexBackground article div{
-    animation: divs-rotate 1s ease-in;
-    animation-fill-mode: forwards;
-}
-
-@keyframes divs-rotate {
-    0%{
-        rotate: 0;
-    }
-    100%{
-        rotate: 360deg;
-    }
-}
