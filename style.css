@@ -530,6 +530,8 @@ h3:hover{
     }
     100 %{
         transform: translateY(0);
+        justify-content: center;
+
     }
 }
 
