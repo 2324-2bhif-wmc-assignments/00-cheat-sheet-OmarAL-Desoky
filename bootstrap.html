@@ -6,7 +6,7 @@
         <link type="text/css" rel="stylesheet" href="style.css">
     </head>
     <body>
-
+        <img src="background.avif" alt="..." class="background">
         <div class="header">
             <a href="index.html"><img class="HomeButton" src="Home.svg" alt="HomeButton"/></a>
 
@@ -17,19 +17,51 @@
 
                 <div class="links_dropdown_content">
                     <div>
-                        <a href="#WorldWideWeb">World Wide Web</a>
+                        <a href="#installation">Installation</a>
                     </div>
 
                     <div>
-                        <a href="#WebServer">Web Server</a>
+                        <a href="#typography">Typography</a>
                     </div>
 
                     <div>
-                        <a href="#WebClient">Web Client</a>
+                        <a href="#images-bootstrap">Images</a>
                     </div>
 
                     <div>
-                        <a href="#HelloWorld">Hello World</a>
+                        <a href="#floating-bootstrap">Floating</a>
+                    </div>
+
+                    <div>
+                        <a href="#lists-bootstrap">Lists</a>
+                    </div>
+
+                    <div>
+                        <a href="#table-bootstrap">Table</a>
+                    </div>
+
+                    <div>
+                        <a href="#buttons-bootstrap">Buttons</a>
+                    </div>
+
+                    <div>
+                        <a href="#grids-bootstrap">Grids</a>
+                    </div>
+
+                    <div>
+                        <a href="#cards-bootstrap">Cards</a>
+                    </div>
+
+                    <div>
+                        <a href="#colors-bootstrap">Colors</a>
+                    </div>
+
+                    <div>
+                        <a href="#dropdown-bootstrap">Dropdown</a>
+                    </div>
+
+                    <div>
+                        <a href="#carousel">Carousel</a>
                     </div>
                 </div>
             </div>
@@ -93,7 +125,7 @@
                 </ul>
             </section>
 
-            <section>
+            <section id="floating-bootstrap">
                 <h2>Floating</h2>
                 <hr>
 
@@ -108,7 +140,7 @@
                 </ul>
             </section>
 
-            <section>
+            <section id="lists-bootstrap">
                 <h2>Lists</h2>
                 <hr>
 
@@ -141,7 +173,7 @@
                 </ul>
             </section>
 
-            <section>
+            <section id="table-bootstrap">
                 <h2>Tables</h2>
                 <hr>
 
@@ -157,7 +189,7 @@
                 </ul>
             </section>
 
-            <section>
+            <section id="buttons-bootstrap">
                 <h2>Buttons</h2>
                 <hr>
 
@@ -181,28 +213,154 @@
                 </ul>
             </section>
 
-            <section>
-                <h2></h2>
+            <section id="grids-bootstrap">
+                <h2>Grids</h2>
                 <hr>
 
                 <h3>Syntax</h3>
                 <hr class="underlineH3">
+
+                <p class="underlineH3">
+                    To use grids, you want to create a container, then row
+                    <br/>
+                    div class="container"
+                    div class="row"
+                    then div class="col-SIZE-NUMBER"
+                </p>
+
+                <ul>
+                    <li>
+                        Size:
+                        <ul>
+                            <li>xs (for phones)</li>
+                            <li>sm (for tablets)</li>
+                            <li>md (for desktops)</li>
+                            <li>lg (for larger desktops)</li>
+                        </ul>
+                    </li>
+                    <li>
+                        Number: when using col-Size-4 that means it takes four places out of 12
+                    </li>
+                </ul>
             </section>
 
-            <section>
-                <h2></h2>
+            <section id="cards-bootstrap">
+                <h2>Cards</h2>
                 <hr>
 
                 <h3>Syntax</h3>
                 <hr class="underlineH3">
+
+                <p class="underlineH3">
+                    &lt;div class="card" style="width: 20rem;"&gt;
+                    <br/>
+                    &lt;img class="card-img-top" src="#" alt="Card image cap"&gt;
+                    <br/>
+                    &lt;div class="card-body"&gt;
+                    <br/>
+                    &lt;h4 class="card-title">Card title&lt;/h4&gt;
+                    <br/>
+                    &lt;p class="card-text">Content.&lt;/p&gt;
+                    <br/>
+                    &lt;a href="#" class="btn btn-primary" role="button">Go somewhere&lt;/a&gt;
+                </p>
             </section>
 
-            <section>
-                <h2></h2>
+            <section id="colors-bootstrap">
+                <h2>Colors</h2>
                 <hr>
 
                 <h3>Syntax</h3>
                 <hr class="underlineH3">
+
+                <ul>
+                    <li>
+                        Text:
+                        Syntax: "text-..."
+                        <ul>
+                            <li>primary = blue</li>
+                            <li>success = green</li>
+                            <li>info = sky</li>
+                            <li>warning = yellow</li>
+                            <li>danger = red</li>
+                            <li>muted = grey</li>
+                        </ul>
+                    </li>
+                    <li>
+                        Background:
+                        The same as text but Syntax: "bg-..."
+                    </li>
+                    <li>
+                        Buttons:
+                        Syntax: "btn btn-..."
+                        same colors as text +
+                        <ul>
+                            <li>default = white</li>
+                            <li>Link = like a link</li>
+                        </ul>
+                    </li>
+                    <li>
+                        Lists:
+                        Syntax: "list-group-item-..." same colors as text but no muted and +
+                        <ul>
+                            <li>secondary = grey</li>
+                            <li>light = lightgrey</li>
+                            <li>dark = darkgrey</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+
+            <section id="dropdown-bootstrap">
+                <h2>Dropdown</h2>
+                <hr>
+
+                <h3>Syntax</h3>
+                <hr class="underlineH3">
+
+                <ul>
+                    <li>div class="dropdown"</li>
+                    <li>button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"</li>
+                    <li>
+                        ul class="dropdown-menu"
+                        li/... class="dropdown-item"
+                    </li>
+                    <li>hr class="dropdown-divider" then li/...</li>
+                </ul>
+            </section>
+
+            <section id="carousel">
+                <h2>Carousel</h2>
+                <hr>
+
+                <h3>Syntax</h3>
+                <hr class="underlineH3">
+
+                <pre>
+                    <strong>
+                        &lt;div id="carouselExample" class="carousel slide"&gt;
+                            &lt;div class="carousel-inner"&gt;
+                                &lt;div class="carousel-item active"&gt;
+                                    &lt;img src="..." class="d-block w-100" alt="..."&gt;
+                                &lt;/div&gt;
+                                &lt;div class="carousel-item"&gt;
+                                    &lt;img src="..." class="d-block w-100" alt="..."&gt;
+                                &lt;/div&gt;
+                                &lt;div class="carousel-item"&gt;
+                                    &lt;img src="..." class="d-block w-100" alt="..."&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                            &lt;button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev"&gt;
+                                &lt;span class="carousel-control-prev-icon" aria-hidden="true"&gt;&lt;/span&gt;
+                                &lt;span class="visually-hidden"&gt;Previous&lt;/span&gt;
+                            &lt;/button&gt;
+                            &lt;button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next"&gt;
+                                &lt;span class="carousel-control-next-icon" aria-hidden="true"&gt;&lt;/span&gt;
+                                &lt;span class="visually-hidden"&gt;Next&lt;/span&gt;
+                            &lt;/button&gt;
+                        &lt;/div&gt;
+                    </strong>
+                </pre>
             </section>
         </div>
     </body>
