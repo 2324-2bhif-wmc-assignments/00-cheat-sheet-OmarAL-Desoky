@@ -491,19 +491,25 @@ h3:hover{
     right: 2%;
 }
 
-.links_dropdown_content a{
+.links_dropdown_content a {
     font-size: 25px;
-    padding: 1rem;
+    padding: 0.5rem;
     font-family: Arial, Nova, Cond, Light, sans-serif;
 
     text-decoration: none;
     color: black;
+}
 
+.links_dropdown_content div{
     box-shadow: 16px 16px 16px black;
     background-color: mintcream;
 
     border-radius: 10px;
     text-align: center;
+    margin: 1rem;
+
+    animation: dropdown 1s ease-in;
+    animation-fill-mode: forwards;
 }
 
 .navigation:hover .links_dropdown_content{
@@ -512,15 +518,6 @@ h3:hover{
 
 .navigation:hover{
     cursor: pointer;
-}
-
-.links_dropdown_content div{
-    margin: 1rem;
-}
-
-.links_dropdown_content div {
-    animation: dropdown 1s ease-in;
-    animation-fill-mode: forwards;
 }
 
 @keyframes dropdown {
@@ -533,7 +530,7 @@ h3:hover{
     }
 }
 
-.links_dropdown_content div > a:hover {
+.links_dropdown_content div:hover {
     background-color: red;
 }
 
