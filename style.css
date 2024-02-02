@@ -2,6 +2,10 @@ body {
     z-index: 1;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .background {
     width: 100%;
     position: fixed;
@@ -510,6 +514,13 @@ h3:hover{
 
     animation: dropdown 1s ease-in;
     animation-fill-mode: forwards;
+
+    transition: width, 2s;
+}
+
+.links_dropdown_content div:hover {
+    width: 110%;
+    background-color: #FEDBB7;
 }
 
 .navigation:hover .links_dropdown_content{
@@ -528,10 +539,6 @@ h3:hover{
         transform: translateY(100%);
         rotate: 360deg;
     }
-}
-
-.links_dropdown_content div:hover {
-    background-color: red;
 }
 
 #indexBackground article div{
