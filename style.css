@@ -36,6 +36,7 @@ h1, .header{
     top: 0;
 
     background: linear-gradient(90deg, rgba(246,246,246,1) 0%, rgba(20,160,156,1) 52%, rgba(16,149,177,1) 68%);
+    z-index: 100;
 }
 
 .header p{
@@ -555,5 +556,10 @@ h3:hover{
         justify-content: center;
 
     }
+}
+
+#carousel img {
+    height: 20rem;
+    width: 20rem;
 }
 
