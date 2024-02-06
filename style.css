@@ -563,3 +563,12 @@ h3:hover{
     width: 20rem;
 }
 
+.cards-box {
+    display: flex;
+    gap: 2rem;
+    justify-content: space-evenly;
+}
+
+.cards-box img {
+    height: 15rem;
+}
