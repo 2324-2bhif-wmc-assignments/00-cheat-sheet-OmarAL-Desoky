@@ -512,7 +512,7 @@ h3:hover{
 
     border-radius: 10px;
     text-align: center;
-    margin: 0.5rem;
+    margin: 0.3rem;
 
     animation: dropdown 1s ease-in;
     animation-fill-mode: forwards;
